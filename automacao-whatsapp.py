@@ -33,10 +33,10 @@ for i, number in enumerate(contatos_df['Número']):
     test = float(list[-1])
 
     if test%2 == 0:
-        msg = "Oi, tudo bem?. Sou o Gabriel da LearningFun. Somos especializados no ensino de inglês para crianças e queremos apresentar a você nossa proposta para a implementação da nossa metodologia em sua Escola. E assim oferecer aos pais de seus alunos algo relevante para educação dos seus filhos. Tem interesse em nos conhecer?"
+        msg = "message"
         texto = urllib.parse.quote(f"{msg}")
     else:
-        msg = "Olá, tudo bem? Sou o Gabriel da LearningFun. Somos especializados no ensino de inglês para crianças. Queremos apresentar a você nossa proposta para a implementação da nossa metodologia em sua Escola e assim oferecer aos pais de seus alunos algo relevante para educação dos seus filhos. Gostaria de nos conhecer melhor?"
+        msg = "message"
         texto = urllib.parse.quote(f"{msg}")
 
     link = f"https://web.whatsapp.com/send?phone=55{number}&text={texto}"
